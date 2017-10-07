@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/title_background"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:gravity="center_vertical"
+		>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			>
+
+			<TextView
+				android:id="@+id/restaurantName"
+				android:textAppearance="?android:textAppearanceMedium"
+				android:layout_gravity="center_vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=""
+				android:textColor="#ffffffff"
+				/>
+
+		</LinearLayout>
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="5"
+			>
+			<Button
+				android:textAppearance="?android:textAppearanceMediumInverse"
+				android:layout_gravity="right|center_vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/maps"
+				android:text="Maps"
+				android:textColor="#ffffffff"
+				android:background="@drawable/btn_weight"
+				android:textSize="14.0sp"
+				/>
+		</FrameLayout>
+		>
+
+	</LinearLayout>
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0.0dip"
+		android:layout_weight="1.0">
+		<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:fillViewport="true"
+			android:layout_weight="1.0">
+			<LinearLayout
+				android:id="@+id/lite_list"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="#ffffffff"
+				>
+			</LinearLayout>
+		</ScrollView>
+	</FrameLayout>
+
+
+</LinearLayout>

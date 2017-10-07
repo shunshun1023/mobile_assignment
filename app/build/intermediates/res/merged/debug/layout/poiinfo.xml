@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/detailUI"
+    android:background="#ffffffff">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#ffffffff">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="3"
+			android:orientation="vertical"
+			android:padding="8.0dip">
+
+			<ImageView
+				android:id="@+id/restaurant_Image"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:src="@drawable/upload"></ImageView>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:orientation="vertical"
+			android:paddingLeft="2.0dip"
+			android:paddingTop="8.0dip">
+
+			<ImageView
+				android:id="@+id/restaurant_stars"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:src="@drawable/star50"></ImageView>
+
+			<LinearLayout
+				android:id="@+id/tex2_lay1"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="0.0dip"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/average"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3.0dip"
+					android:singleLine="true"
+					android:text="Average Cost: "
+					android:textAppearance="?android:textAppearanceMedium"
+					android:textColor="#ff000000"
+					android:textSize="16.0sp" />
+
+				<TextView
+					android:id="@+id/average_cost"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3.0dip"
+					android:singleLine="true"
+					android:text=""
+					android:textAppearance="?android:textAppearanceMedium"
+					android:textColor="#ff000000"
+					android:textSize="16.0sp" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/score"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="0.0dip"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/restaurant_taste"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3.0dip"
+					android:text="Taste: "
+					android:textAppearance="?android:textAppearanceMedium"
+					android:textColor="#ff999999"
+					android:textSize="16.0sp" />
+
+				<TextView
+					android:id="@+id/taste_score"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3.0dip"
+					android:singleLine="true"
+					android:text=""
+					android:textAppearance="?android:textAppearanceMedium"
+					android:textColor="#ff000000"
+					android:textSize="16.0sp" />
+                <TextView
+                    android:id="@+id/service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:singleLine="false"
+                    android:text=" Service: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ff999999" />
+
+                <TextView
+                    android:id="@+id/service_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="0.0dip"
+				android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/environment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:singleLine="true"
+                    android:text="Environment: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ff999999"
+                    android:textSize="16.0sp" />
+                <TextView
+                    android:id="@+id/environment_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/list_item_border"
+		android:clickable="true"
+		>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_address_big" />
+
+		<TextView
+			android:textAppearance="?android:textAppearanceMedium"
+			android:id="@+id/restaurant_address"
+			android:textSize="16.0sp"
+			android:paddingRight="6.0dip"
+			android:layout_width="0.0px"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6.0dip"
+			android:maxLines="2"
+			android:layout_weight="1.0"
+			android:text=""
+			android:textColor="#ff000000"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/list_item_border"
+		android:clickable="true"
+		>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_phone_big" />
+
+		<TextView
+			android:textAppearance="?android:textAppearanceMedium"
+			android:id= "@+id/restaurant_phone"
+			android:textSize="16.0sp"
+			android:paddingRight="6.0dip"
+			android:layout_width="0.0px"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6.0dip"
+			android:maxLines="2"
+			android:layout_weight="1.0"
+			android:text=""
+			android:textColor="#ff000000"
+			/>
+	</LinearLayout>
+
+	<TextView
+		android:textAppearance="?android:textAppearanceMedium"
+		android:textSize="16.0sp"
+		android:textColor="#ff000000"
+		android:gravity="center_vertical"
+		android:background="@drawable/text_background"
+		android:paddingLeft="10.0dip"
+		android:paddingTop="1.0dip"
+		android:paddingRight="10.0dip"
+		android:paddingBottom="1.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Recommended by Customers:"
+		/>
+
+	<LinearLayout
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="8.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/list_item"
+		android:clickable="true"
+		>
+
+		<TextView
+			android:textAppearance="?android:textAppearanceMedium"
+			android:id="@+id/restaurant_popularDishes"
+			android:textSize="16.0sp"
+			android:textColor="@color/deep_gray"
+			android:layout_width="0.0px"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3.0dip"
+			android:layout_weight="1.0"
+			android:lineSpacingMultiplier="1.3"
+			android:text=""
+			/>
+
+	</LinearLayout>
+
+    <TextView
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="16.0sp"
+        android:textColor="#ff000000"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_background"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="1.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingBottom="1.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Self Description:"
+        />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/restaurant_selfDescription"
+            android:textSize="16.0sp"
+            android:textColor="@color/deep_gray"
+            android:layout_width="0.0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:layout_weight="1.0"
+            android:lineSpacingMultiplier="1.3"
+            android:text=""
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/loadingbar"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:padding="10dip"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:text="载入中..."
+            />
+
+    </LinearLayout>
+	<LinearLayout
+		android:id="@+id/serverdata"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:visibility="gone"
+		>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1.0dip"
+                >
+                <TextView
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff000000"
+                    android:paddingLeft="10.0dip"
+                    android:paddingTop="1.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_weight="1.0"
+                    android:text="Comments"
+                    android:background="@drawable/text_background"
+                    />
+                <Button
+                    android:id="@+id/btnAddComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25.0dp"
+                    android:layout_gravity="right"
+                    android:text="Add"
+                    android:textAppearance="?android:textAppearanceMediumInverse"
+                    android:textColor="@color/yellow"
+                    android:background="@drawable/text_background"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        <ListView
+            android:id="@+id/listViewToDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="1.0dip"
+            android:paddingBottom="1.0dip"
+            tools:listitem="@layout/row_list_to_do">
+        </ListView>
+
+	</LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_enter.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\anim_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\gradient_enter.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\gradient_enter.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\splash_screen_hold.xml",
+        "source": "D:\\Mobile\\dianping\\app\\src\\main\\res\\anim\\splash_screen_hold.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\splash_screen_hold.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\splash_screen_hold.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_exit.xml",
+        "source": "D:\\Mobile\\dianping\\app\\src\\main\\res\\anim\\anim_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_enter.xml",
+        "source": "D:\\Mobile\\dianping\\app\\src\\main\\res\\anim\\anim_enter.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\rack.xml",
+        "source": "D:\\Mobile\\dianping\\app\\src\\main\\res\\anim\\rack.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_exit.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\anim_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\rack.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\rack.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\splash_screen_fade.xml",
+        "source": "D:\\Mobile\\dianping\\app\\src\\main\\res\\anim\\splash_screen_fade.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\main_exit.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\main_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\back_exit.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\back_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\splash_screen_fade.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\splash_screen_fade.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\main_enter.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\main_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\back_enter.xml",
+        "source": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\src\\main\\res\\anim\\back_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shunshun\\Downloads\\new_dianping\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Shunshun\\.android\\build-cache\\0ecb1468494d359de8ff1bb72d662f21b7e2510f\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\dianping\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Lenovo\\.android\\build-cache\\8043aca10782c87de5dd8589034bc8281616504b\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    }
+]

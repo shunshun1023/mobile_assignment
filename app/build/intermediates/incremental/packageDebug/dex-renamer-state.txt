@@ -1,0 +1,7 @@
+#Sat Oct 07 16:17:37 AEDT 2017
+base.0=D\:\\Mobile\\dianping\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7ddb9fc7db36e07c59188699e238d354e65638fe
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\Mobile\\dianping\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_393d6e641a4cb05d47b4e466c8e59ea781f22466\\classes.dex
+base.1=D\:\\Mobile\\dianping\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_393d6e641a4cb05d47b4e466c8e59ea781f22466
+file.0=D\:\\Mobile\\dianping\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7ddb9fc7db36e07c59188699e238d354e65638fe\\classes.dex

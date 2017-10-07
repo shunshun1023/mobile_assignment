@@ -1,0 +1,4 @@
+#Fri Oct 06 17:46:23 AEDT 2017
+base.0=D\:\\Mobile\\dianping\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0
+renamed.0=classes.dex
+file.0=D\:\\Mobile\\dianping\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0\\classes.dex

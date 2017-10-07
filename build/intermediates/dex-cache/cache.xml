@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Mobile\dianping\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f9894b341f4ae8ece0fb761ed62b742d07a3d21b">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7ddb9fc7db36e07c59188699e238d354e65638fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\de53f8e524b45d2708566aedd6863050a6afce3a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b5ed05574ca7f8eeba9980f82e7acdd610f1b44b">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0b2cd9fbffea3cf591445709bea06f29812247bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\79126efc127079b9fd716b11b8aeed1511e55755\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0da049d820fc0cefa8c19802d0b2fb2774fcfbea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\2b5bb1e1fbc04f5886e03b4cea229473b4810cbc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6bd1be0e69c99d262afd920391ebde847217dfe2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\68cb2bb5b8cdac01f3da0a9625d6861b3479bdd7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8f2b7024b0176cafd61a6b6c8d0abd017919ee6e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\93799b6b6fa6038ead1f51a0f67c4a0f8d356d18\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_50603cfc6becfa61cf80f8470391697e4939654e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\8043aca10782c87de5dd8589034bc8281616504b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3d603083d74b56833103850c900f367f2b8f97ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.5.0_5a9d752a12d7770a6e0d997262b6560cbea5e4cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\ce1982133f566c7e24ad70c9f79391865808d209\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2cfbcc705b85aeefadb088880c69a996036ab695\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\5b39efa97412025018adcfaeef359e72da19a5c7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_563ab08d2c825c147af8ed089a6154cd53f721c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3\5fc52c41ef0239d1093a1eb7c3697036183677ce\gson-2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3_25ebc477faf8fec39aece4bfcd784f8d6e514b43\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\e9f82179c68babaebc9e0b7f5bedf3dddd269191\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dd3ce302f5cd18bf3cadb30bcf9734a056a24e56\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_aa9dfdee2773c01909574e5daff1a84b6efe8362\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.android\build-cache\56b4cb393e494a49f06eb08be769d9fd39792ec4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a556122840f55729dc8b82472f3d59bcf88395cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_c3085fb8e90b9d7e26002d8ec3022424463eb5dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\com.microsoft.azure\azure-notifications-handler\1.0.1\c322af100020e6db539f2aa367698d4b88fc453f\azure-notifications-handler-1.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c322af100020e6db539f2aa367698d4b88fc453f">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\azure-notifications-handler-1.0.1_c3639046e49292eccdafe90208e3bce0a4855d50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\guava\guava\18.0\guava-18.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-18.0_23ae9d619c9ad952ac11ce7bff78df802e3e98c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Mobile\dianping\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Mobile\dianping\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_393d6e641a4cb05d47b4e466c8e59ea781f22466\classes.dex" />
+    </item>
+
+</items>

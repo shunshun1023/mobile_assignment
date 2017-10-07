@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:padding="6dip" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.12"
+            android:text="@string/service_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dip"  >
+         <EditText
+            android:id="@+id/textNewToDo"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+             android:ems="10"
+            android:hint="@string/add_textbox_hint" >
+            <requestFocus />
+       </EditText>
+     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Service"
+        android:textColor="@color/base_center_color_pressed"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/title_background"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/base_center_color_pressed"
+        android:text="Environment"
+        android:textSize="20dp"/>
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/title_background"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/base_center_color_pressed"
+        android:text="Taste"
+        android:textSize="20dp"/>
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:tooltipText="Service"
+        android:background="@drawable/title_background"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:textColor="@color/base_center_color_pressed"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+    <Button
+        android:id="@+id/buttonAddToDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:onClick="addItem"
+        android:background="@drawable/title_background"
+        android:text="@string/add_button_text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+</LinearLayout>
