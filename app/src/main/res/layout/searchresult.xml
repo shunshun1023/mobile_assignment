@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffffff"
+	>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/title_background"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:gravity="center_vertical"
+		>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			>
+
+			<TextView
+				android:textAppearance="?android:textAppearanceMedium"
+				android:layout_gravity="center_vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Around Restaurants"
+				android:textColor="#ffffffff"
+				/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="@drawable/search_bar_background"
+		android:gravity="center_vertical"
+		android:padding="10px"
+		>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			>
+			<Button
+				android:id="@+id/id_sort_price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/yellow"
+				android:text="Sort by price"
+				android:paddingTop="10dip"
+				android:paddingBottom="10dip"
+                android:textStyle="bold"
+				/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			>
+
+			<Button
+				android:id="@+id/id_sort_busyness"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/yellow"
+				android:text="Sort by busyness"
+				android:layout_marginLeft ="140dip"
+				android:paddingTop="10dip"
+				android:paddingBottom="10dip"
+                android:textStyle="bold"
+				/>
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/resultlist"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		>
+
+	</ListView>
+
+</LinearLayout>
