@@ -51,15 +51,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 	public void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
-        System.out.println("get location");
+		System.out.println("get location");
 		//location = getCurrentLocation();
 
 
 		setContentView(R.layout.searchresult);
-        //System.out.println("getData:+AAAAA"+location.toString());
-        // get the data of restaurants
+		//System.out.println("getData:+AAAAA"+location.toString());
+		// get the data of restaurants
 		mData = PoiResultData.getRestaurantData();
-        //mData = PoiResultData.calculateDistance(mData,location);
+		//mData = PoiResultData.calculateDistance(mData,location);
 		filterData = mData;
 
 		listView = (ListView) findViewById(R.id.resultlist);
@@ -72,6 +72,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		View btnBusyness = findViewById(R.id.id_sort_busyness);
 		btnBusyness.setOnClickListener(this);
 
+		View btnDistance = findViewById(R.id.id_sort_distance);
+		btnDistance.setOnClickListener(this);
+
 		loadingView = LayoutInflater.from(this).inflate(R.layout.listfooter, null);
 
 		listView.addFooterView(loadingView);
@@ -81,21 +84,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		listView.setOnItemClickListener(mOnClickListener);
 
 	}
-    // Get current location
-    private Location getCurrentLocation() {
-        //get the currentLocation
-        _locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        _locationProvider = _locationManager.getProvider(LocationManager.NETWORK_PROVIDER);
-        @SuppressWarnings("MissingPermission")
-        Location location = _locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-        return location;
-    }
+	// Get current location
+	private Location getCurrentLocation() {
+		//get the currentLocation
+		_locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+		_locationProvider = _locationManager.getProvider(LocationManager.NETWORK_PROVIDER);
+		@SuppressWarnings("MissingPermission")
+		Location location = _locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+		return location;
+	}
 
-    private AdapterView.OnItemClickListener mOnClickListener = new AdapterView.OnItemClickListener() {
+	private AdapterView.OnItemClickListener mOnClickListener = new AdapterView.OnItemClickListener() {
 		public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 			Intent intent = new Intent();
 			intent.setClass(MainActivity.this, DetailActivity.class);
-            Restaurant restaurant = new Restaurant(mData.get(position));
+			Restaurant restaurant = new Restaurant(mData.get(position));
 			//Bundle bundle = new Bundle();
 			//bundle.putString("restaurant", restaurant);
 			intent.putExtra("restaurant",restaurant);
@@ -147,7 +150,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 					map.get("addr").toString(),
 					((Integer) map.get("star")).intValue(),
 					((Integer) map.get("busy")).intValue(),
-                    map.get("distance").toString()
+					map.get("distance").toString()
 			);
 			if (position == filterData.size() - 1) {
 				listView.removeFooterView(loadingView);
@@ -156,7 +159,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		}
 
 	}
-	// Comparator for Ascending Order
+	// Comparator for price  Order
 	public static Comparator<Map<String,Object>> PriceComparator = new Comparator <Map<String,Object>>( ) {
 
 		@Override
@@ -164,7 +167,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			return compareInt(((Integer) t1.get("price")).intValue(), ((Integer) t2.get("price")).intValue());
 		}
 	};
-	// Comparator for Ascending Order
+	// Comparator for busyness  Order
 	public static Comparator <Map<String,Object>> BusynessComparator = new Comparator <Map<String,Object>>( ) {
 
 		@Override
@@ -172,6 +175,28 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			return compareInt(((Integer) t1.get("busy")).intValue(), ((Integer) t2.get("busy")).intValue());
 		}
 	};
+	// Comparator for distance Order
+	public static Comparator <Map<String,Object>> DistanceComparator = new Comparator <Map<String,Object>>( ) {
+
+		@Override
+		public int compare(Map<String, Object> t1, Map<String, Object> t2) {
+
+			int intDistance1 = getMeters(t1.get("distance").toString());
+			int intDistance2 = getMeters(t2.get("distance").toString());
+			return compareInt(intDistance1, intDistance2);
+		}
+	};
+	// get distance value.for example 680m returns 680, 1.5km returns 15000
+	private static int getMeters(String strDistance) {
+		if(strDistance.contains("Km")){
+			String [] strListDistance1 = strDistance.split("Km");
+			return (int)(Double.parseDouble(strListDistance1[0])*1000);
+		}else{
+			String [] strListDistance =strDistance.split("m");
+			return (Integer.parseInt(strListDistance[0]));
+		}
+	}
+	//compare two integers
 	private static int compareInt(int value1, int value2) {
 		if(value1 > value2){
 			return 1;
@@ -193,6 +218,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			}
 			case R.id.id_sort_busyness: {
 				Collections.sort(filterData, BusynessComparator);
+				((PoiResultAdapter) resultAdapter).notifyDataSetChanged();
+				break;
+			}
+			case R.id.id_sort_distance:{
+				Collections.sort(filterData, DistanceComparator);
 				((PoiResultAdapter) resultAdapter).notifyDataSetChanged();
 				break;
 			}

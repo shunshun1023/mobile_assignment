@@ -57,10 +57,28 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:textColor="@color/yellow"
-				android:text="Sort by price"
+				android:text="Sort by  price "
 				android:paddingTop="10dip"
 				android:paddingBottom="10dip"
-                android:textStyle="bold"
+				android:textStyle="bold"
+				/>
+
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			>
+			<Button
+				android:id="@+id/id_sort_distance"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/yellow"
+				android:text="Sort by distance"
+				android:layout_marginLeft ="30dip"
+				android:paddingTop="10dip"
+				android:paddingBottom="10dip"
+				android:textStyle="bold"
 				/>
 
 		</LinearLayout>
@@ -70,17 +88,16 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
 			>
-
 			<Button
 				android:id="@+id/id_sort_busyness"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:textColor="@color/yellow"
 				android:text="Sort by busyness"
-				android:layout_marginLeft ="140dip"
+				android:layout_marginLeft ="30dip"
 				android:paddingTop="10dip"
 				android:paddingBottom="10dip"
-                android:textStyle="bold"
+				android:textStyle="bold"
 				/>
 
 		</LinearLayout>
