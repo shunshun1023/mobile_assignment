@@ -52,14 +52,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	public void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 		System.out.println("get location");
-		//location = getCurrentLocation();
+		location = getCurrentLocation();
 
 
 		setContentView(R.layout.searchresult);
 		//System.out.println("getData:+AAAAA"+location.toString());
 		// get the data of restaurants
 		mData = PoiResultData.getRestaurantData();
-		//mData = PoiResultData.calculateDistance(mData,location);
+		mData = PoiResultData.calculateDistance(mData,location);
 		filterData = mData;
 
 		listView = (ListView) findViewById(R.id.resultlist);

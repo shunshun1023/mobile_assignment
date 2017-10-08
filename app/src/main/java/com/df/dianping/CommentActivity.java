@@ -17,8 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.RatingBar;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -31,17 +31,12 @@ import com.microsoft.windowsazure.mobileservices.http.ServiceFilter;
 import com.microsoft.windowsazure.mobileservices.http.ServiceFilterRequest;
 import com.microsoft.windowsazure.mobileservices.http.ServiceFilterResponse;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
-import com.microsoft.windowsazure.mobileservices.table.query.Query;
-import com.microsoft.windowsazure.mobileservices.table.query.QueryOperations;
 import com.microsoft.windowsazure.mobileservices.table.sync.MobileServiceSyncContext;
-import com.microsoft.windowsazure.mobileservices.table.sync.MobileServiceSyncTable;
 import com.microsoft.windowsazure.mobileservices.table.sync.localstore.ColumnDataType;
 import com.microsoft.windowsazure.mobileservices.table.sync.localstore.MobileServiceLocalStoreException;
 import com.microsoft.windowsazure.mobileservices.table.sync.localstore.SQLiteLocalStore;
 import com.microsoft.windowsazure.mobileservices.table.sync.synchandler.SimpleSyncHandler;
 import com.squareup.okhttp.OkHttpClient;
-
-import static com.microsoft.windowsazure.mobileservices.table.query.QueryOperations.*;
 
 public class CommentActivity extends Activity {
 
@@ -76,13 +71,18 @@ public class CommentActivity extends Activity {
      */
     private ProgressBar mProgressBar;
 
+    private Restaurant restaurant;
+
+    private RatingBar ratingEnvironment;
+    private RatingBar ratingTaste;
+    private RatingBar ratingService;
     /**
      * Initializes the activity
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_to_do);
+        setContentView(R.layout.activity_rate);
 
         mProgressBar = (ProgressBar) findViewById(R.id.loadingProgressBar);
 
@@ -111,7 +111,11 @@ public class CommentActivity extends Activity {
             // Get the Mobile Service Table instance to use
 
             mToDoTable = mClient.getTable(ToDoItem.class);
-
+            restaurant = (Restaurant) getIntent().getSerializableExtra("restaurant");
+            mTextNewToDo = (EditText) findViewById(R.id.textNewToDo);
+            ratingService = (RatingBar) findViewById(R.id.ratingService);
+            ratingEnvironment = (RatingBar) findViewById(R.id.ratingEnvironment);
+            ratingTaste = (RatingBar) findViewById(R.id.ratingTaste);
             // Offline Sync
             //mToDoTable = mClient.getSyncTable("ToDoItem", ToDoItem.class);
 
@@ -215,12 +219,11 @@ public class CommentActivity extends Activity {
 
         item.setText(mTextNewToDo.getText().toString());
         item.setComplete(false);
-        item.setResaurant("a1");
-        item.setRank(10);
-        item.setTasteRank(10);
-        item.setEnvironmentRank(10);
-        item.setServiceRank(10);
-
+        item.setResaurant(restaurant.getName());
+        item.setRank((ratingTaste.getRating()+ratingEnvironment.getRating()+ratingService.getRating())/3);
+        item.setTasteRank(ratingTaste.getRating());
+        item.setEnvironmentRank(ratingEnvironment.getRating());
+        item.setServiceRank(ratingService.getRating());
 
         // Insert the new item
         AsyncTask<Void, Void, Void> task = new AsyncTask<Void, Void, Void>(){
@@ -305,7 +308,7 @@ public class CommentActivity extends Activity {
 
     private List<ToDoItem> refreshItemsFromMobileServiceTable() throws ExecutionException, InterruptedException {
         return mToDoTable.where().field("restaurant").
-                eq("a1").execute().get();
+                eq(restaurant.getName()).execute().get();
     }
 
     //Offline Sync

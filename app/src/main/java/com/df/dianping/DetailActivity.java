@@ -65,6 +65,7 @@ public class DetailActivity extends Activity implements OnClickListener
 	private String restuarantName;
 	private  LinearLayout restaurantDetail;
 	private Map<String, Object> mData;
+    private Restaurant restaurant;
     // calculate the scores and show them
     Handler handler = new Handler()
     {
@@ -98,7 +99,7 @@ public class DetailActivity extends Activity implements OnClickListener
 	{
 		super.onCreate(savedInstanceState);
         //get selected restaurant information from Main_Activity
-		Restaurant restaurant = (Restaurant) getIntent().getSerializableExtra("restaurant");
+        restaurant = (Restaurant) getIntent().getSerializableExtra("restaurant");
         //set view
 		setContentView(R.layout.poidetail);
 
@@ -117,7 +118,7 @@ public class DetailActivity extends Activity implements OnClickListener
             mClient = new MobileServiceClient(
                     "https://appal1.azurewebsites.net",
                     this).withFilter(new ProgressFilter());
-            System.out.println("AAAA beigin1");
+            //System.out.println("AAAA beigin1");
             // Extend timeout from default of 10s to 20s
             mClient.setAndroidHttpClientFactory(new OkHttpClientFactory() {
                 @Override
@@ -130,23 +131,23 @@ public class DetailActivity extends Activity implements OnClickListener
             });
             // Get the Mobile Service Table instance to use
             mToDoTable = mClient.getTable(ToDoItem.class);
-            System.out.println("AAAA beigin2");
+
             //Init local storage
             initLocalStore().get();
             //final List<ToDoItem> list = refreshItemsFromMobileServiceTable();
-            System.out.println("AAAA beigin3");
+
             refreshItemsFromTable();
             // Create an adapter to bind the items with the view
             mAdapter = new ToDoItemAdapter(this, R.layout.row_list_to_do);
             ListView listViewToDo = (ListView) findViewById(R.id.listViewToDo);
             listViewToDo.setAdapter(mAdapter);
-            System.out.println("AAAA beigin4");
+
 
            // View wantedView =  listViewToDo.getChildAt(0);
 
             // Load the items from the Mobile Service
 
-            System.out.println("AAAA beigin5");
+
         } catch (MalformedURLException e) {
             createAndShowDialog(new Exception("There was an error creating the Mobile Service. Verify the URL"), "Error");
         } catch (Exception e){
@@ -157,6 +158,9 @@ public class DetailActivity extends Activity implements OnClickListener
 
         View btnComment = findViewById(R.id.btnAddComments);
         btnComment.setOnClickListener(this);
+
+        View btnNav = findViewById(R.id.restaurant_phone);
+        btnNav.setOnClickListener(this);
 	}
     // output the information of restaurant to the right position
 	private void InitialResultDetails(Restaurant restaurant) {
@@ -313,10 +317,11 @@ public class DetailActivity extends Activity implements OnClickListener
 	{
 		switch(v.getId())
 		{
+            //use google map to navigate
 			case R.id.maps:
             {
                 TextView textview = (TextView) findViewById(R.id.restaurant_address);
-                String direction = "google.navigation:q=" + textview.getText().toString();
+                String direction = "google.navigation:q=" + textview.getText().toString() + "&mode=w";;
                 Uri gmmIntentUri = Uri.parse(direction);
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
@@ -324,11 +329,24 @@ public class DetailActivity extends Activity implements OnClickListener
                 break;
             }
 
+            //go to CommentActivity
             case R.id.btnAddComments:
             {
                 Intent intent = new Intent();
                 intent.setClass(DetailActivity.this, CommentActivity.class);
+                intent.putExtra("restaurant",restaurant);
                 startActivity(intent);
+                break;
+            }
+
+            //open phone to dial
+            case R.id.restaurant_phone:
+            {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+restaurant.getPhone()));
+                startActivity(intent);
+                break;
             }
 		}
 
@@ -401,9 +419,9 @@ public class DetailActivity extends Activity implements OnClickListener
 
     private List<ToDoItem> refreshItemsFromMobileServiceTable() throws ExecutionException, InterruptedException {
         System.out.println("AAAA+ lchangdu"+ mToDoTable.where().field("restaurant").
-                eq("a1").execute().get().size());
+                eq(restaurant.getName()).execute().get().size());
         return mToDoTable.where().field("restaurant").
-                eq("a1").execute().get();
+                eq(restaurant.getName()).execute().get();
     }
 
     private AsyncTask<Void, Void, Void> initLocalStore() throws MobileServiceLocalStoreException, ExecutionException, InterruptedException {

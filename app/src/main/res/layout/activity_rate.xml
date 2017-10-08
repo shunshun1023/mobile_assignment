@@ -32,14 +32,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="6dip"  >
+
          <EditText
-            android:id="@+id/textNewToDo"
-            android:layout_width="329dp"
-            android:layout_height="wrap_content"
+             android:id="@+id/textNewToDo"
+             android:layout_width="329dp"
+             android:layout_height="wrap_content"
              android:ems="10"
-            android:hint="@string/add_textbox_hint" >
-            <requestFocus />
-       </EditText>
+             android:hint="@string/add_textbox_hint"
+             android:textColor="@color/contents_text">
+
+             <requestFocus />
+         </EditText>
      </LinearLayout>
 
     <TextView
@@ -52,7 +55,7 @@
         android:textStyle="bold"
         android:textSize="20dp"/>
     <RatingBar
-        android:id="@+id/ratingBar1"
+        android:id="@+id/ratingService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -67,7 +70,7 @@
         android:text="Environment"
         android:textSize="20dp"/>
     <RatingBar
-        android:id="@+id/ratingBar2"
+        android:id="@+id/ratingEnvironment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -83,7 +86,7 @@
         android:text="Taste"
         android:textSize="20dp"/>
     <RatingBar
-        android:id="@+id/ratingBar3"
+        android:id="@+id/ratingTaste"
         android:layout_marginBottom="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
