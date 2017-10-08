@@ -49,7 +49,7 @@ public class PoiResultData {
 
 		map = new HashMap<String, Object>();
 		map.put("name", "Coda");
-		map.put("price", 6285);
+		map.put("price", 62);
 		map.put("addr", "141 Flinders Lane,Melbourne,Victoria 3000");
         map.put("latitude",-37.81542);
         map.put("longitude",144.97182);

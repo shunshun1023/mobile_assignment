@@ -126,6 +126,9 @@ public class ToDoItem {
         mComplete = complete;
     }
 
+    /**
+     *set restaurant attributes
+     */
     public final void setResaurant(String name) {
         mRestaurant = name;
     }

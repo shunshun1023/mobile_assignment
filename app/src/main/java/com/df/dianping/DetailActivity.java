@@ -339,7 +339,7 @@ public class DetailActivity extends Activity implements OnClickListener
                 break;
             }
 
-            //open phone to dial
+            //open dialler to call the restaurant number
             case R.id.restaurant_phone:
             {
                 Intent intent = new Intent();

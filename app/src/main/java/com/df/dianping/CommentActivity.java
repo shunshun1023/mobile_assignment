@@ -72,7 +72,6 @@ public class CommentActivity extends Activity {
     private ProgressBar mProgressBar;
 
     private Restaurant restaurant;
-
     private RatingBar ratingEnvironment;
     private RatingBar ratingTaste;
     private RatingBar ratingService;
@@ -111,7 +110,10 @@ public class CommentActivity extends Activity {
             // Get the Mobile Service Table instance to use
 
             mToDoTable = mClient.getTable(ToDoItem.class);
+
+            //get selected restaurant information from DetailActivity
             restaurant = (Restaurant) getIntent().getSerializableExtra("restaurant");
+
             mTextNewToDo = (EditText) findViewById(R.id.textNewToDo);
             ratingService = (RatingBar) findViewById(R.id.ratingService);
             ratingEnvironment = (RatingBar) findViewById(R.id.ratingEnvironment);
@@ -217,6 +219,7 @@ public class CommentActivity extends Activity {
         // Create a new item
         final ToDoItem item = new ToDoItem();
 
+        //set the user input data to the new item
         item.setText(mTextNewToDo.getText().toString());
         item.setComplete(false);
         item.setResaurant(restaurant.getName());
